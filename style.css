@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Satisfy&display=swap');
+
+:root {
+    --font-primary: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+	background: #727272;
+    font-family: var(--font-primary);
+    line-height: 1;
+    font-weight: 400;
+    font-size: 16px;
+}
+header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+header .wrap-menu-header {
+    position: fixed;
+    width: 100%;
+    padding: 30;
+    top: 0;
+    left: 0;
+    border-top: 5px solid #ec1d25;
+}
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+header .wrap-menu-header .wrap_header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .wrap-menu-header .wrap_header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header .wrap-menu-header .wrap_header .menu ul{
+    flex: 1;
+    text-align: center;
+}
+header .wrap-menu-header .wrap_header .menu  ul li{
+    display: inline-block;
+    margin: auto;
+}
+
+header .wrap-menu-header .wrap_header .menu ul li a {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    line-height: 115px;
+   
+}
+
+header .wrap-menu-header .wrap_header .menu  ul li a:hover{
+    color: red;
+}
+
+
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+.social a {
+    font-size: 15px;
+    color: white;
+}
+.btn-show{
+    width: 26px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-left: 20px;
+}
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.btn-show:hover{
+    background-color: red;
+    color: #f2f2f2;
+}
+.section-slide .slider {
+    position: relative;
+}
+.section-slide .slider .wrap-content {
+    display: flex;
+    overflow: hidden;
+    
+}
+.section-slide .slider .wrap-content .slider-item {
+    flex: 1 0 100%;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.slider-item-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.slider-item-image::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.slider-item-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.caption1 {
+    font-family: Courgette;
+    font-size: 60px;
+    color: white;
+}
+.caption2 {
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+.btn {
+    background: white;
+    border-radius: 10px;
+    width: 135px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ec1d25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+
+.section-welcome {
+    padding-top: 120px;
+    padding-bottom: 105px;
+    background-color: #f2f2f2;
+}
+
+.container-welcome {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrap-content {
+    display: flex;
+}
+
+.welcome-container-description {
+    padding-top: 45px;
+    padding-bottom: 30px;
+    width: 50%;
+}
+
+.welcome-wrap-text {
+    text-align: center;
+}
+
+.description-tittle1 {
+    font-family: Courgette;
+    font-size: 30px;
+    color: #d61c22;
+}
+
+.description-tittle2 {
+    font-family: Poppins;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 10px 0px;
+
+}
+
+.description {
+    font-family: Montserrat;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto 15px auto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.link-story {
+    font-family: Montserrat;
+    cursor: pointer;
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+}
+
+.link-story:hover {
+    color: #ec1d25;
+}
+
+.link-story i {
+    margin-left: 8px;
+}
+
+.welcome-container-img {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+.welcome-wrap-img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.welcome-wrap-img>img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.welcome-wrap-img>img:hover {
+    scale: 1.1;
+    transition: all 0.4s;
+}
+
+
+
+
+
+.content-intro {
+    padding-top: 77px;
+    padding-bottom: 133px;
+    background-color: #f2f2f2;
+}
+
+.container-intro {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.wrap-intro {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.intro {
+    max-width: 33%;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.intro-wrap-img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.intro-img {
+    width: 100%;
+    transition: all 0.6s;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.intro-img:hover {
+    scale: 1.1;
+    transition: all 0.4s;
+}
+
+.intro-wrap-text {
+    padding-top: 35px;
+}
+
+.intro-wrap-text a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.text-title {
+    font-family: Poppins;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    
+}
+
+.intro-wrap-text p {
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.7;
+
+}
+
+.text-more {
+    font-family: Montserrat;
+    font-size: 12px;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-title:hover,
+.text-more:hover {
+    color: #ec1d25;
+    transition: all 0.4s;
+}
+
+
